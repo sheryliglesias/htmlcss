@@ -17,14 +17,28 @@
 <fieldset> 
        <legend style="font-weight:bold;">Invoice Details</legend>
 
+       
        <label>Invoice To</label>
        <input type="name" name="name"placeholder="name"/>
        <div>
             <label>Contact #:</label>
             <input type=" contact_number" name="number"placeholder=" contact number"/>
-       </div>
-       <label>Date:</label>
-       <input type="date" name="birthdate"/>
+        </div>
+        <div>   
+            <label>Date:</label>
+            <input type="date" name="birthdate"/>
+        </div> 
+            <label>Currency</label>
+            <select name="currency" currency:required>
+              <option value="">-- currency --</option>
+              <option value="AUD">AUD</option>
+              <option value="EUR">EUR</option>
+              <option value="PHP">PHP</option>
+              <option value="USD">USD</option>
+              
+       </select>   
+       
+       
 </fieldset>       
        
  <table style="width: 100%">
@@ -76,20 +90,16 @@
        </tr>
 </table>
 <fieldset> 
-       <legend style="font-weight:bold;">Additional Details</legend>
+       <legend style="font-weight:bold;">Additional Details form</legend>
  
        <p>Payment Method</p>
        <div>
               <select name="Paymentmethod" Payment Method:required>
                      <option value="">-- Select Payment--</option>
-                     <option value="debit card">Debit card</option>
-                     <option value="mastercard">mastercard</option>
+                     <option value="Paypal">Paypal</option>
+                     <option value="mastercard Credit card">credit card</option>
                      <option value="cash on delivery">cash on delivery</option>
                      <option value="Gcash">Gcash</option>
-                     <option value="American Express">American Express</option>
-                     <option value="Paypal">Paypal</option>
-                     <option value="MACH" >MACH</option>
-                     <option value="Tenpo">Tenpo</option>
               </select>
  
                 <div style="margin-top: 20px">
